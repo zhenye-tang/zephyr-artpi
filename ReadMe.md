@@ -5,7 +5,7 @@
 ```
 west-workspace/
 │
-├── art-pi/         # .git/     │
+├── zephyr-artpi/         # .git/    │
 │   ├── CMakeLists.txt               │
 │   ├── prj.conf                     │  never modified by west
 │   ├── src/                         │
@@ -20,7 +20,7 @@ west-workspace/
     └── west.yml         # This can be partially imported with lower precedence or ignored.
                          # Only the 'manifest-rev' version can be imported.
 ```
-west 命令如下：
+west 命令如下(最终调用 cmake)：
 ```
 west build -b stm32h750_art_pi zephyr-artpi/
 ```
